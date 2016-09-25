@@ -1,0 +1,40 @@
+<?php
+function test1_module_menu(){
+	$item = array(
+			'title' => 'Пункт меню',
+			'page callback' => 'test1_module_callback',
+			'type' => MENU_NORMAL_ITEM,
+			'access callback' => TRUE,
+		);
+	return $item;
+}
+
+function test1_module_callback(){
+	$form = array();
+
+	$form['name'] = arra(
+			'#type' => 'textfield',
+			'#title' => "Name",
+			'#attributes' => array(
+					'placeholder' => array('Last name'),
+				),
+		);
+	$form['sex'] = array(
+        '#type' => 'radios',
+        '#title' => 'Пол',
+        '#options' => array(
+            '0' => 'Male',
+            '1' => 'Female',
+        ),
+        '#default_value' => '0',
+    );
+
+    // кнопка отправки формы
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => 'Submit'
+    );
+
+    // отрисовываем форму
+    return drupal_render($form); 
+}
