@@ -1,0 +1,15 @@
+
+/* Загальні характеристики сайту */
+
+*{margin: 0;padding: 0;}
+body{background: #f7f3f0;}
+
+
+
+/* Top page */
+div#social-icon-top {width: 100%; height: 44px; padding: 10px 0;}
+div#social-icon-top img {width: 32px; height: 32px; color:white; cursor: pointer; border-radius: 4px;}
+div#name-and-slogan{ margin: 10px 0; padding: 30px; background: white; border: 1px solid rgb(224, 224, 224);}
+div#name-and-slogan #site-name a{color: black; font-size: 1.5em; text-decoration: none;}
+div#name-and-slogan #site-name a:hover,
+div#name-and-slogan #site-name a:focus{text-decoration: none; color: black;}

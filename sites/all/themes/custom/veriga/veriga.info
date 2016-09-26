@@ -1,0 +1,24 @@
+name = My theme
+description = Main theme site
+core = 7.x
+
+scripts[] = bootstrap/js/bootstrap.min.js
+
+
+;REGIONS CORE
+regions[page_top] = Page Top
+regions[header] = Header
+regions[highlighted] = Highlight
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = Sidebar First
+regions[sidebar_second] = Sidebar Second
+regions[footer] = Footer
+regions[page_bottom] = Page Bottom
+
+;CUSTOM REGIONS
+regions[social_top] = Social icon top
+
+stylesheets[all][] = bootstrap/css/bootstrap.min.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/font-awesome.css
